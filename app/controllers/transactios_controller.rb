@@ -6,6 +6,9 @@ class TransactiosController < ApplicationController
     @transactios = Transactio.all
   end
 
+  def dashboard
+    @transactios = Transactio.all
+  end
   # GET /transactios/1
   def show
   end

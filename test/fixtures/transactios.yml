@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: 
-  amount: 9.99
+  name: "First Citizens Bank"
+  amount: 100000
 
 two:
-  name: 
-  amount: 9.99
+  name: "The Iron Yard"
+  amount: -12000

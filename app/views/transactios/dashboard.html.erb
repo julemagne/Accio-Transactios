@@ -2,20 +2,25 @@
 
 <div>
 
-    <p id="shrink"><%= angry %></p>
+  <p id="shrink"><%= angry %></p>
 
 </div>
 
 <div>
-    <p>
-        <%= link_to 'New Transactio', new_transactio_path %>
 
-        <p>Total transactios:</p>
-        <p><%= number_of_transactios %></p>
+    <p>Total transactios:</p>
+    <p><%= number_of_transactios %></p>
 
-    Total balance:
+    <p>Total balance:</p>
+    <p><%= total %></p>
 
-        <p><%= total %></p>
+    <p><%= link_to 'List of Transactios', transactios_path %></p>
 
-    </p>
+    <p><%= link_to 'New Transactio', new_transactio_path %></p>
+
+    <p>Highest expense ever:</p>
+    <p><%= highest_expense_ever %></p>
+
+    <p>Most spent at:</p>
+    <p><%= most_spent_at %></p>
 </div>

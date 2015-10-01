@@ -5,6 +5,14 @@
 
 #shrink{
     width: 840px;
-    zoom: 0.4;
-    -moz-transform: scale(0.4);
+    zoom: 0.2;
+    -moz-transform: scale(0.2);
+    line-height: 3;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #98bf21;
+    padding: 3px 8px 2px 8px;
+    background-color: #EAF2D3;
 }

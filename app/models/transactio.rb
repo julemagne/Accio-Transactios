@@ -13,5 +13,5 @@ def number_of_transactios
 end
 
 def angry
-  total < 0 ? image_tag("http://www.hd-wallpapersdownload.com/upload/cat-wallpaper/hd-cat-background-pics-wallpaper.jpg") : nil
+  total < 0 ? image_tag("http://www.hd-wallpapersdownload.com/upload/cat-wallpaper/hd-cat-background-pics-wallpaper.jpg") + "YOUR BALANCE IS NEGATIVE!" : nil
 end

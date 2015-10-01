@@ -2,23 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.ddd {
-  padding: 5px;
-  background-color: yellow;
-}
 
 #shrink{
+    width: 840px;
     zoom: 0.4;
     -moz-transform: scale(0.4);
-}
-
-.words{
-  position: relative;
-  margin-top: -500px;
-  z-index: 1;
-}
-
-.under{
-  clear: both;
-  float: left;
 }

@@ -3,14 +3,18 @@
 one:
   name: "First Citizens Bank"
   amount: 100000
+  created_at: <%= Time.now - 1.month %>
 
 two:
   name: "The Iron Yard"
   amount: -12000
+  created_at: <%= Time.now %>
+
 
 three:
   name: "The Iron Yard"
   amount: -3000
+  created_at: <%= Time.now %>
 
 four:
   name: "Honda"

@@ -27,4 +27,11 @@ class TransactioTest < ActiveSupport::TestCase
   def test_most_spent_at
     assert_equal "The Iron Yard, -15000.0 USD", Transactio.send(most_spent_at)
   end
+
+  test "current month transaction count" do
+    assert_equal 2, Transactio.count_this_month
+    Transactio.create!(name: "Mason", amount: -100)
+    assert_equal 2, Transactio.count_this_month
+  end
+
 end

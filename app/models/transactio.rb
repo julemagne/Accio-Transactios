@@ -30,15 +30,3 @@ def most_spent_at
   expensive_place = @transactios.group(:name).sum(:amount).key(money_number)
   expensive_place +", "+ money_number.to_s+" USD"
 end
-
-# def most_spent_at
-#   @transactios.group(:name).sum(:amount).values.reduce {|t|
-#     first = t
-#     if t > first
-#       r = t
-#     else
-#       r = first
-#     end
-#   }
-#   r
-# end

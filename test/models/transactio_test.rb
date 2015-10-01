@@ -19,5 +19,12 @@ class TransactioTest < ActiveSupport::TestCase
     assert_equal Transactio.new.number_of_transactios, 2
   end
 
+  def test_highest_expense_ever
+    t = Transactio.create
+    assert_equal "Honda, -14000.0 USD", t.highest_expense_ever
+  end
 
+  def test_most_spent_at
+    assert_equal "The Iron Yard, -15000.0 USD", Transactio.send(most_spent_at)
+  end
 end

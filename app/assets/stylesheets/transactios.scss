@@ -2,9 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.he {
+  font-family: geneva;
+  color: #98bf21;
+  text-align: center;
+}
+
+.black{
+  color: black;
+}
 
 #shrink{
-    width: 840px;
     zoom: 0.2;
     -moz-transform: scale(0.2);
     line-height: 3;
@@ -15,4 +23,15 @@ table, th, td {
     border: 1px solid #98bf21;
     padding: 3px 8px 2px 8px;
     background-color: #EAF2D3;
+}
+
+.center {
+    margin: auto;
+    width: 512px;
+    border:1px solid #8AC007;
+    padding: 10px;
+}
+
+.cat {
+  margin: auto;
 }

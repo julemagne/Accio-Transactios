@@ -10,6 +10,8 @@ The home page will display:
 * the total number of transactios ever
 * a link to the list of transactios
 * a link to create a new transactio
+* the biggest expense ever, with the person/place of the transactio
+* the name of the place/person where you have spent the most money ever
 
 The page will also reprimand the user if the balance in the account is negative.
 

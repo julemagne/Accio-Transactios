@@ -15,7 +15,7 @@
     <% @transactios.each do |transactio| %>
       <tr>
         <td><%= transactio.name %></td>
-        <td><%= transactio.amount %></td>
+        <td><%= number_to_currency(transactio.amount) %></td>
         <td><%= link_to 'Show', transactio %></td>
         <td><%= link_to 'Edit', edit_transactio_path(transactio) %></td>
         <td><%= link_to 'Destroy', transactio, method: :delete, data: { confirm: 'Are you sure?' } %></td>

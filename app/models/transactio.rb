@@ -34,15 +34,14 @@ def angry
 end
 
 def highest_expense_ever
-  @transactios.where("amount <0").order(:amount).first.name.to_s+", "+@transactios.order(:amount).first.amount.to_s+" USD"
+  @transactios.where("amount <0").order(:amount).first.name + ", " + number_to_currency(@transactios.order(:amount).first.amount.to_s)
 end
 
 def most_spent_at
-  money_number = @transactios.where("amount <0").group(:name).sum(:amount).values.min
-  expensive_place = @transactios.group(:name).sum(:amount).key(money_number)
-  expensive_place +", "+ money_number.to_s+" USD"
+  money_number = number_to_currency(@transactios.where("amount <0").group(:name).sum(:amount).values.min)
+  expensive_place = @transactios.where("amount < 0").group(:name).order("sum(amount)").first.name
+  expensive_place + ", " + money_number
 
-  # @transactios.where("amount < 0").group(:name).order("sum(amount)").first.name
 end
 
 def count_this_month
